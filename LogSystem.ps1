@@ -32,21 +32,20 @@ class LogSystem {
         return $this
     }
 
-    [object] clearLog() {
+    [object] ClearLog() {
         $this.LogFile > ""
         return $this
     }
 
-    [object] addLog($trueText, $falseText, $condition) {
+    [object] AddLog($trueText, $falseText, $condition) {
         if ($condition) {
             $this.addLog($trueText)
         } else {$this.addLog($falseText)}
         return $this
     }
 
-    [object] addLog($text) {
+    [object] AddLog($text) {
         Add-Content $this.LogFile ($this.preFormat + $text)
         return $this
     }
-
 }
