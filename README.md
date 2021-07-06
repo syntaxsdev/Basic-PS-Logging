@@ -1,2 +1,6 @@
 # Basic-PS-Logging
-Extremely basic logging feature for my PowerShell  projects.
+Extremely simple logging feature for my PowerShell projects.
+Allows for conditional logging for easy inline log solutions.
+
+
+## Example
